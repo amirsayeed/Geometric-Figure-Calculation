@@ -1,12 +1,11 @@
 function triangleArea(){
     const getBaseValue = triangleBase();
-    const getTriangleValue = triangleHeight();
+    const getHeightValue = triangleHeight();
 
-    const area = 0.5*getBaseValue*getTriangleValue;
-    console.log("area of the triangle is:",area);
+    const area = 0.5*getBaseValue*getHeightValue;
+    //console.log("area of the triangle is:",area);
     const areaDislplay = document.getElementById("triangle-area");
     areaDislplay.innerText = area;
-    
 }
 
 function triangleBase(){

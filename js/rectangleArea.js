@@ -1,24 +1,23 @@
-function triangleArea(){
-    const getBaseValue = triangleBase();
-    const getTriangleValue = triangleHeight();
+function rectangleArea(){
+    const getWidthValue = rectangleWidth();
+    const getLengthValue = rectangleLength();
 
-    const area = 0.5*getBaseValue*getTriangleValue;
-    console.log("area of the triangle is:",area);
-    const areaDislplay = document.getElementById("triangle-area");
-    areaDislplay.innerText = area;
-    
+    const area = getWidthValue*getLengthValue;
+    //console.log("area of the triangle is:",area);
+    const areaDislplay = document.getElementById("rectangle-area");
+    areaDislplay.innerText = area; 
 }
 
-function triangleBase(){
-    const baseInput = document.getElementById("triangle-base");
-    const base = baseInput.value;
-    const baseValue = parseFloat(base);
-    return baseValue;
+function rectangleWidth(){
+    const widthInput = document.getElementById("rectangle-width");
+    const width = widthInput.value;
+    const widthValue = parseFloat(width);
+    return widthValue;
 }
 
-function triangleHeight(){
-    const heightInput = document.getElementById("triangle-height");
-    const height = heightInput.value;
-    const heightValue = parseFloat(height);
-    return heightValue;
+function rectangleLength(){
+    const lengthInput = document.getElementById("rectangle-length");
+    const length = lengthInput.value;
+    const lengthValue = parseFloat(length);
+    return lengthValue;
 }
