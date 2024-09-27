@@ -30,13 +30,13 @@
             <div class="flex flex-col md:flex-row gap-10">
                 <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div class="card card-compact bg-base-100 shadow-xl">
-                        <figure class="p-10">
-                            <img src="images/triangle.png" alt="Shoes" />
+                        <figure class="px-10 pt-6">
+                            <img class="w-[240px] h-[194px]" src="images/triangle.png" alt="Shoes" />
                         </figure>
                         <div class="card-body">
-                            <h2 class="card-title">Triangle</h2>
-                            <p class="text-center text-3xl">Area = 0.5 X b X h</p>
-                            <div class="">
+                            <h2 class="text-center text-xl font-medium">Triangle</h2>
+                            <p class="text-center text-xl">Area(A) = 0.5 X b X h</p>
+                            <div>
                                 <input id="triangle-base" class="w-24 text-2xl p-2 rounded-sm" type="text"
                                     placeholder="b">
                                 <span class="mr-4 ml-2">cm</span>
@@ -49,23 +49,23 @@
                                 </p>
                             </div>
                             <div class="card-actions">
-                                <button class="btn btn-primary w-full">Calculate</button>
+                                <button onclick="triangleArea()" class="btn btn-primary w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
                     <div class="card card-compact bg-base-100 shadow-xl">
-                        <figure class="p-10">
-                            <img src="images/rectangle.png" alt="Shoes" />
+                        <figure class="px-10 pt-6">
+                            <img class="w-[300px] h-[194px]" src="images/rectangle.png" alt="Shoes" />
                         </figure>
                         <div class="card-body">
-                            <h2 class="card-title">Triangle</h2>
-                            <p class="text-center text-3xl">Area = 0.5 X b X h</p>
+                            <h2 class="text-center text-xl font-medium">Rectangle</h2>
+                            <p class="text-center text-xl">Area(A) = w x l</p>
                             <div class="">
                                 <input id="triangle-base" class="w-24 text-2xl p-2 rounded-sm" type="text"
-                                    placeholder="b">
+                                    placeholder="w">
                                 <span class="mr-4 ml-2">cm</span>
                                 <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="triangle-height"
-                                    placeholder="h">
+                                    placeholder="l">
                                 <span>cm</span>
                             </div>
                             <div>
@@ -78,12 +78,12 @@
                         </div>
                     </div>
                     <div class="card card-compact bg-base-100 shadow-xl">
-                        <figure class="p-10">
-                            <img src="images/parallelogram.png" alt="Shoes" />
+                        <figure class="px-10 pt-6">
+                            <img class="w-[350px] h-[194px]" src="images/parallelogram.png" alt="Shoes" />
                         </figure>
                         <div class="card-body">
-                            <h2 class="card-title">Triangle</h2>
-                            <p class="text-center text-3xl">Area = 0.5 X b X h</p>
+                            <h2 class="text-center text-xl font-medium">Parallelogram</h2>
+                            <p class="text-center text-xl">Area(A) = b X h</p>
                             <div class="">
                                 <input id="triangle-base" class="w-24 text-2xl p-2 rounded-sm" type="text"
                                     placeholder="b">
@@ -183,6 +183,7 @@
     <footer>
 
     </footer>
+    <script src="js/triangleAria.js"></script>
 </body>
 
 </html>
