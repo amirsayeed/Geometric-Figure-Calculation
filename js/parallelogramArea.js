@@ -4,7 +4,7 @@ function parallelogramArea(){
 
     const area = getBaseValue*getHeightValue;
     //console.log("area of the triangle is:",area);
-    const areaDislplay = document.getElementById("parallelogram-area");
+    const areaDislplay = document.getElementById("area");
     areaDislplay.innerText = area;
     
 }

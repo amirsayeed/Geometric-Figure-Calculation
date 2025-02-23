@@ -4,7 +4,7 @@ function pentagonArea(){
 
     const area = 0.5*getPenValue*getBaseValue;
     //console.log("area of the triangle is:",area);
-    const areaDislplay = document.getElementById("pentagon-area");
+    const areaDislplay = document.getElementById("area");
     areaDislplay.innerText = area; 
 }
 

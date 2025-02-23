@@ -4,7 +4,7 @@ function rhombusArea(){
 
     const area = 0.5*getDia1Value*getDia2Value;
     //console.log("area of the triangle is:",area);
-    const areaDislplay = document.getElementById("rhombus-area");
+    const areaDislplay = document.getElementById("area");
     areaDislplay.innerText = area; 
 }
 

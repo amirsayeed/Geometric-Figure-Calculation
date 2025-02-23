@@ -4,7 +4,7 @@ function ellipseArea(){
 
     const area = 3.14*getMajorValue*getMinorValue;
     //console.log("area of the triangle is:",area);
-    const areaDislplay = document.getElementById("ellipse-area");
+    const areaDislplay = document.getElementById("area");
     areaDislplay.innerText = area.toFixed(2); 
 }
 

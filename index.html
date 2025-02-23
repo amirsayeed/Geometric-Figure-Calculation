@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Geometric Figure Calculation</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -12,10 +12,10 @@
 
 <body class="mx-4">
     <header>
-        <div class="mt-6 mx-6 border-2 border-gray-700">
+        <div class="mt-6 mx-6 border rounded-xl">
             <div class="navbar px-4 bg-sky-200">
                 <div class="navbar-start">
-                    <h3 class="text-xl">
+                    <h3 class="text-2xl">
                         <span class="font-bold">Interactive</span><br>Geometric Genious
                     </h3>
                 </div>
@@ -26,10 +26,10 @@
         </div>
     </header>
     <main>
-        <section class="mx-4 mt-10">
+        <section class="mx-4 my-10">
             <div class="flex flex-col md:flex-row gap-10">
                 <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div class="card card-compact bg-base-100 shadow-xl">
+                    <div class="card card-compact bg-base-100 rounded-2xl drop-shadow-2xl">
                         <figure class="px-10 pt-6">
                             <img class="w-[240px] h-[194px]" src="images/triangle.png" alt="Shoes" />
                         </figure>
@@ -44,16 +44,13 @@
                                     placeholder="h">
                                 <span>cm</span>
                             </div>
-                            <div>
-                                <p class="text-2xl">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span>
-                                </p>
-                            </div>
-                            <div class="card-actions">
+
+                            <div class="card-actions pt-3">
                                 <button onclick="triangleArea()" class="btn btn-primary w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card card-compact bg-base-100 shadow-xl">
+                    <div class="card card-compact bg-base-100 rounded-2xl drop-shadow-2xl">
                         <figure class="px-10 pt-6">
                             <img class="w-[300px] h-[194px]" src="images/rectangle.png" alt="Shoes" />
                         </figure>
@@ -68,16 +65,13 @@
                                     placeholder="l">
                                 <span>cm</span>
                             </div>
-                            <div>
-                                <p class="text-2xl">Area: <span id="rectangle-area"></span> <span>cm<sup>2</sup></span>
-                                </p>
-                            </div>
-                            <div class="card-actions">
+
+                            <div class="card-actions pt-3">
                                 <button onclick="rectangleArea()" class="btn btn-primary w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card card-compact bg-base-100 shadow-xl">
+                    <div class="card card-compact bg-base-100 rounded-2xl drop-shadow-2xl">
                         <figure class="px-10 pt-6">
                             <img class="w-[350px] h-[194px]" src="images/parallelogram.png" alt="Shoes" />
                         </figure>
@@ -88,20 +82,17 @@
                                 <input id="parallelogram-base" class="w-24 text-2xl p-2 rounded-sm" type="text"
                                     placeholder="b">
                                 <span class="mr-4 ml-2">cm</span>
-                                <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="parallelogram-height"
-                                    placeholder="h">
+                                <input class="w-24 text-2xl p-2 rounded-sm" type="text" name=""
+                                    id="parallelogram-height" placeholder="h">
                                 <span>cm</span>
                             </div>
-                            <div>
-                                <p class="text-2xl">Area: <span id="parallelogram-area"></span> <span>cm<sup>2</sup></span>
-                                </p>
-                            </div>
-                            <div class="card-actions">
+
+                            <div class="card-actions pt-3">
                                 <button onclick="parallelogramArea()" class="btn btn-primary w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card card-compact bg-base-100 shadow-xl">
+                    <div class="card card-compact bg-base-100 rounded-2xl drop-shadow-2xl">
                         <figure class="px-10 pt-6">
                             <img class="w-[257px] h-[194px]" src="images/rhombus.png" alt="Shoes" />
                         </figure>
@@ -116,16 +107,13 @@
                                     placeholder="d2">
                                 <span>cm</span>
                             </div>
-                            <div>
-                                <p class="text-2xl">Area: <span id="rhombus-area"></span> <span>cm<sup>2</sup></span>
-                                </p>
-                            </div>
-                            <div class="card-actions">
+
+                            <div class="card-actions pt-3">
                                 <button onclick="rhombusArea()" class="btn btn-primary w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card card-compact bg-base-100 shadow-xl">
+                    <div class="card card-compact bg-base-100 rounded-2xl drop-shadow-2xl">
                         <figure class="px-10 pt-6">
                             <img class="w-[194px] h-[188px]" src="images/pentagon.png" alt="Shoes" />
                         </figure>
@@ -140,16 +128,12 @@
                                     placeholder="b">
                                 <span>cm</span>
                             </div>
-                            <div>
-                                <p class="text-2xl">Area: <span id="pentagon-area"></span> <span>cm<sup>2</sup></span>
-                                </p>
-                            </div>
-                            <div class="card-actions">
+                            <div class="card-actions pt-3">
                                 <button onclick="pentagonArea()" class="btn btn-primary w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card card-compact bg-base-100 shadow-xl">
+                    <div class="card card-compact bg-base-100 rounded-2xl drop-shadow-2xl">
                         <figure class="px-10 pt-6">
                             <img class="w-[287px] h-[178px]" src="images/ellipse.png" alt="Shoes" />
                         </figure>
@@ -160,22 +144,24 @@
                                 <input id="ellipse-semi-major-axis" class="w-24 text-2xl p-2 rounded-sm" type="text"
                                     placeholder="a">
                                 <span class="mr-4 ml-2">cm</span>
-                                <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="ellipse-semi-minor-axis"
-                                    placeholder="b">
+                                <input class="w-24 text-2xl p-2 rounded-sm" type="text" name=""
+                                    id="ellipse-semi-minor-axis" placeholder="b">
                                 <span>cm</span>
                             </div>
-                            <div>
-                                <p class="text-2xl">Area: <span id="ellipse-area"></span> <span>cm<sup>2</sup></span>
-                                </p>
-                            </div>
-                            <div class="card-actions">
+
+                            <div class="card-actions pt-3">
                                 <button onclick="ellipseArea()" class="btn btn-primary w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="border-2 p-4 w-72 h-80 rounded-sm">
-                    <h3 class="text-xl text-center"><u>Area Calculation</u></h3>
+                <div class="border-2 p-4 md:w-1/3 lg:w-1/4 min-h-screen rounded-lg">
+                    <h3 class="text-xl text-center font-medium border-b-2 pb-2">Area Calculation</h3>
+                    <div class="mt-2">
+                        <p class="text-2xl text-center">Area: <span id="area"></span>
+                            <span>cm<sup>2</sup></span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -189,6 +175,7 @@
     <script src="js/rhombusArea.js"></script>
     <script src="js/pentagonArea.js"></script>
     <script src="js/ellipseArea.js"></script>
+    <script src="js/showArea.js"></script>
 </body>
 
 </html>

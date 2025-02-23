@@ -4,7 +4,7 @@ function triangleArea(){
 
     const area = 0.5*getBaseValue*getHeightValue;
     //console.log("area of the triangle is:",area);
-    const areaDislplay = document.getElementById("triangle-area");
+    const areaDislplay = document.getElementById("area");
     areaDislplay.innerText = area;
 }
 
